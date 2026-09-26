@@ -1,0 +1,21 @@
+# Core pipeline
+torch==2.14.0
+lightgbm==4.7.0
+scikit-learn==1.9.1
+numpy==2.5.3
+scipy==1.18.1
+polars==1.44.2
+pyarrow==25.0.1
+tqdm==4.70.1
+joblib==1.6.0
+
+# Testing (Q9 anti-gaming suite)
+pytest==9.1.1
+
+# NRMS baseline fidelity: ebrec's official NRMS initialises from a pretrained
+# transformer word-embedding matrix and tokenises with its WordPiece tokenizer
+# (FacebookAI/xlm-roberta-base). Also used by the dense retriever's MiniLM
+# backend (sentence-transformers pulls in transformers).
+transformers==5.17.0
+sentence-transformers==6.1.0
+faiss-cpu==1.15.1

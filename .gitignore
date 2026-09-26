@@ -1,0 +1,58 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ── Virtual Environment ───────────────────────────────────────────────────────
+.venv/
+env/
+venv/
+ENV/
+
+
+# ── Large Data & Archives ─────────────────────────────────────────────────────
+*.zip
+*.tar.gz
+*.parquet
+data/
+MIND_data/
+
+# ── Model Checkpoints & Binaries ──────────────────────────────────────────────
+*.pt
+*.ckpt
+*.pkl
+*.joblib
+*.npy
+*.npz
+
+# ── Generated Results (keep structure, ignore content) ────────────────────────
+results/features/
+results/models/
+results/dense_cache/
+results/runs/*
+results/submissions/
+results/*.csv
+
+# ── Logs (keep structure, ignore generated logs) ──────────────────────────────
+logs/
+
+# ── A1 Reference Code & Benchmark (not committed to A2 repo) ──────────────────
+ire-assignment1/
+ebnerd-benchmark/
+A1.*
+A2.*
+mind_analysis.ipynb
+ebnerd_analysis.ipynb
+*.ipynb_checkpoints/
+.ipynb_checkpoints/
+
+
+# ── OS & IDE ──────────────────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
